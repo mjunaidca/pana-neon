@@ -4,7 +4,28 @@
 
 @layer components {
     body {
-        @apply max-w-screen-2xl w-11/12 mx-auto bg-white;
+        @apply max-w-screen-xl w-11/12 mx-auto;
+    }
+
+    h1 {
+        @apply  text-4xl  md:text-5xl xl:text-7xl font-bold text-gray-800;
+    }
+
+    h4 {
+        @apply   text-lg sm:text-xl font-normal text-gray-600;
+    }
+
+    h2 {
+        @apply  text-2xl sm:text-3xl text-gray-800 font-bold lg:text-4xl xl:text-5xl dark:text-white
+    }
+
+    h3 {
+        @apply  text-xl text-gray-800 font-bold lg:text-2xl dark:text-white
+    }
+
+
+    p {
+        @apply  text-base sm:text-lg xl:text-xl text-gray-800;
     }
 
 }
