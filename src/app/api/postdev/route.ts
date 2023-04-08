@@ -39,11 +39,9 @@ interface Database {
 
 export async function POST(request: NextRequest) {
 
-    const loginDevData: Insertable<devlab_Table> = await request.json();
+    const newDeveloperData: Insertable<devlab_Table> = await request.json();
 
-    const { email, password } = loginDevData;
-
-    console.log("Neon Dev EMAIL", email, "password", password);
+    console.log('DATA COMING FROM SIGN UP FORM', newDeveloperData);
 
     const db = new Kysely<Database>({
         dialect: new PostgresDialect({
@@ -55,13 +53,14 @@ export async function POST(request: NextRequest) {
     });
 
     const result = await db
-        .selectFrom("devlab")
-        .selectAll()
-        .where("email", "=", email)
-        .where("password", "=", password)
+        .insertInto("devlab")
+        .values(newDeveloperData)
+        .returningAll()
         .execute();
 
-    console.log("Neon Dev DB Reult on API", result);
+    console.log("Devlab Neon Dev DB Reult on API", result);
     return new NextResponse(JSON.stringify(result))
 
 }
+
+
