@@ -36,10 +36,10 @@ export function Q1Q3Circle({ quarter, details }: Props) {
   return (
     <div className="space-y-6 relative flex flex-col justify-start items-center w-full ">
       <div className="flex justify-center md:justify-between my-6">
-        <div className="bg-red-700/80 rounded-full w-44 h-44 lg:w-56 lg:h-56">
+        <div className="bg-gray-800 rounded-full w-44 h-44 lg:w-56 lg:h-56">
           <div className="bg-gray-100 rounded-full w-40 h-40 lg:w-52 lg:h-52 m-2">
             <div className="flex items-center justify-center h-full px-3">
-              <h2>{quarter}</h2>
+              <h2 className="text-gray-600">{quarter}</h2>
             </div>
           </div>
         </div>

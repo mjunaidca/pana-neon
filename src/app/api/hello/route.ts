@@ -16,15 +16,28 @@ import {
   Updateable,
 } from 'kysely';
 
-interface dev_Table {
-  id: Generated<number>;
-  name: string;
+interface devlab_Table {
+  dev_id: Generated<number>;
+  first_name: string;
+  last_name: string;
   email: string;
   password: string;
+  gender: string;
+  date_of_birth: string;
+  profile_title: string;
+  about_me: string;
+  image_url: string;
+  github_link: string;
+  best_project_title: string;
+  best_project_description: string;
+  skills: string;
+  personal_website: string;
+  linkedin_url: string;
+  is_approved: boolean;
 }
 
 interface Database {
-  dev: dev_Table
+  devlab: devlab_Table
 }
 
 export async function GET(request: NextRequest) {
@@ -38,11 +51,11 @@ export async function GET(request: NextRequest) {
   });
 
   const result = await db
-    .selectFrom("dev")
+    .selectFrom("devlab")
     .selectAll()
     .execute();
 
-  console.log("Neon Dev DB Reult on API", result);
-  return new NextResponse(JSON.stringify(result[0]))
+  console.log("Devlab Neon Dev DB Reult on API", result);
+  return new NextResponse(JSON.stringify(result))
 
 }
