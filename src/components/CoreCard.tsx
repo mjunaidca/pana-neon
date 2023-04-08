@@ -54,28 +54,17 @@ export function Q1Q3Circle({ quarter, details }: Props) {
 
 export function Q1Q3({ heading, description, id }: any) {
   return (
-    <div className="w-full h-full bg-white shadow-lg rounded-lg p-5 dark:bg-slate-900">
+    <div className="w-full h-full ring-4 ring-red-700/80 bg-gray-100 shadow-lg rounded-lg p-5 dark:bg-slate-900 ">
       <div className="flex items-center gap-x-4 mb-3">
-        <div className="absolute top-0 left-0 text-gray-500 text-6xl font-bold opacity-10 pt-2 pl-2">
+        <div className=" top-0 left-0 text-gray-600 text-6xl font-bold opacity-10 pt-2 pl-2">
           {id}
         </div>
-        <div className="inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-blue-50 bg-blue-100 dark:border-red-900 dark:bg-red-800">
-          <svg
-            className="w-6 h-6 text-red-600 dark:text-red-400"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          ></svg>
-        </div>
+
         <div className="flex-shrink-0">
-          <h3 className="block text-lg font-semibold text-gray-800 dark:text-white">
-            {heading}
-          </h3>
+          <h3 className="text-3xl font-semibold text-gray-800">{heading}</h3>
         </div>
       </div>
-      <p className="text-gray-600 dark:text-gray-400">{description}</p>
+      <p className="">{description}</p>
     </div>
   );
 }

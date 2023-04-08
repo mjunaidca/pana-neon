@@ -3,6 +3,7 @@ import HeroHead from "./Sections/HeroHead";
 import Instructors from "./Sections/Instructors";
 import NutShell from "./Sections/NutShell";
 import OutCome from "./Sections/OutCome";
+import SpecialTracks from "./Sections/SpecialTracks";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <OutCome />
       <Instructors />
       <CoreCourses />
+      <SpecialTracks />
       <NutShell />
     </div>
   );

@@ -50,12 +50,6 @@ export const INSTRUCTORS: Instructors = {
     ]
 }
 
-export const NUTSHELL = {
-    head: "The Program in a Nutshell",
-    subHead: `Earn While You Learn`,
-    description: `In this brand-new type of curriculum, students will learn how to make money and boost exports in the classroom and will begin doing so within six months of the program's beginning. It resembles a cross between a corporate venture and an educational project.    `
-}
-
 
 export const CORECOURSES = {
     head: `Core Courses`,
@@ -76,4 +70,121 @@ export const CORECOURSES = {
             label: 'Quarter III',
             details: `$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development`
         }]
+}
+
+export const SPECIALTRACKS = {
+    head: `Specialized Tracks`,
+    description: `After completing the first three quarters the participants will select one or more specializations consisting of two courses each:    `,
+    specialTracks: [
+        {
+            id: 1,
+            Title: 'Web 3.0 (Blockchain) and Metaverse Specialization',
+            details: `This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.`,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences"
+                }
+            ]
+        },
+        {
+            id: 1,
+            Title: 'Artificial Intelligence (AI) and Deep Learning Specialization',
+            details: `The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.`,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "AI-361: Deep Learning and MLOps"
+                }
+            ]
+        },
+        {
+            id: 1,
+            Title: 'Cloud-Native Computing Specialization',
+            details: `The Cloud-Native Computing Specialization focuses on Containers, Kubernetes, and CDK for Kubernetes. `,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "CN-351: Certified Kubernetes Application Developer (CKAD)"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "CN-361: Developing Multi-Cloud APIs using CDK for Terraform"
+                }
+            ]
+        },
+        {
+            id: 1,
+            Title: 'Ambient Computing and IoT Specialization',
+            details: `The Ambient Computing and IoT Specialization focuses on building Smart Homes, Offices, Factories, and Cities using Voice computing, Matter Protocol, and Embedded Devices. `,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "AC-351: Ambient Computing with Voice Assistants and Matter Protocol Devices"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "AC-361: Embedded Programming using C and Rust"
+                }
+            ]
+        },
+        {
+            id: 1,
+            Title: 'Genomics and Bioinformatics Specialization',
+            details: `Genomics is the study of the total genetic makeup of individual organisms, and how this genetic information is structured, functions, and has evolved; bioinformatics encompasses a diverse range of analytical methods and tools applied to genomic data. This Specialization focuses on performing complex bioinformatics analysis using the most essential Python libraries and applications.`,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "Bio-351: Python for Biologists"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "Bio-361: Bioinformatics with Python"
+                }
+            ]
+        },
+        {
+            id: 1,
+            Title: 'Network Programmability and Automation Specialization',
+            details: `More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.`,
+            quarters: [
+                {
+                    id: 4,
+                    label: 'Quarter IV',
+                    details: "NPA-351: CCNA 200-301 Certification"
+                },
+                {
+                    id: 5,
+                    label: 'Quarter V',
+                    details: "NPA-361: Network Programmability and Automation"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+export const NUTSHELL = {
+    head: "The Program in a Nutshell",
+    subHead: `Earn While You Learn`,
+    description: `In this brand-new type of curriculum, students will learn how to make money and boost exports in the classroom and will begin doing so within six months of the program's beginning. It resembles a cross between a corporate venture and an educational project.    `
 }
