@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["pbs.twimg.com", "media.licdn.com"],
+    domains: ["pbs.twimg.com", "media.licdn.com", "images.unsplash.com"],
   },
   env: {
     NEON_DATABASE_URL:

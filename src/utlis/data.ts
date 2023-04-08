@@ -16,14 +16,19 @@ export const NAVBARITEMS: Array<NavBarItem> = [
         href: "/announcements"
     },
     {
+        label: 'Developers',
+        href: "/devlab"
+    },
+    {
         label: 'About',
         href: "/about"
     },
 ]
 
-export const HEADER: string = "Certified Web 3.0 & Metaverse Dev"
-
-export const HEADERDESCRTIPTION: string = `Get Ready for the Next Generation of the Internet. A One and Quarter Years Panaverse DAO Earn as you Learn Program. Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge, Ambient Computing/IoT, Network Automation, and Bioinformatics Technologies`
+export const HEROHEAD = {
+    HEADER: "Certified Web 3.0 & Metaverse Dev",
+    DESCRTIPTION: `Get Ready for the Next Generation of the Internet. A One and Quarter Years Panaverse DAO Earn as you Learn Program. Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI), Cloud, Edge, Ambient Computing/IoT, Network Automation, and Bioinformatics Technologies`,
+}
 
 export const OUTCOME = {
     head: "Outcome for Participants",
@@ -51,7 +56,6 @@ export const INSTRUCTORS: Instructors = {
         },
     ]
 }
-
 
 export const CORECOURSES = {
     head: `Core Courses`,
@@ -183,16 +187,11 @@ export const SPECIALTRACKS = {
     ]
 }
 
-
-
 export const NUTSHELL = {
     head: "The Program in a Nutshell",
     subHead: `Earn While You Learn`,
     description: `In this brand-new type of curriculum, students will learn how to make money and boost exports in the classroom and will begin doing so within six months of the program's beginning. It resembles a cross between a corporate venture and an educational project.    `
 }
-
-
-
 
 export const SOCIALMEDIA: any = [
     {
@@ -228,3 +227,8 @@ export const SOCIALMEDIA: any = [
 
 ]
 
+export const DEVLAB = {
+    head: "Panaverse Developers Lab",
+    subHead: `Browse developer experts who have been recognized by Panaverse DAO for their in depth knowledge and skillset.`,
+    btnText: "Make Your Developer Profile",
+}

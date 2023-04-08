@@ -22,10 +22,10 @@ const NavBar = () => {
       </div>
       <div className="flex justify-center items-center text-base space-x-6">
         <div>
-          <RingButton text="DevLab" link="/" />
+          <RingButton text="DevLab" link="/devlab" />
         </div>
         <div>
-          <BlackButton text="Apply" link="/" />
+          <BlackButton text="Apply" link="https://www.piaic.org/" />
         </div>
       </div>
     </div>
