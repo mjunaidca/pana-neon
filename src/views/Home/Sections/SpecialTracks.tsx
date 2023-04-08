@@ -26,7 +26,11 @@ const SpecialTracks = () => {
         <div className="flex basis-4/5 w-full">
           <div className="max-w-xl w-full mx-auto">
             {SPECIALTRACKS.specialTracks.map((track) => (
-              <Accordion title={track.Title} content={track.details} />
+              <Accordion
+                title={track.Title}
+                key={track.id}
+                content={track.details}
+              />
             ))}
           </div>
         </div>

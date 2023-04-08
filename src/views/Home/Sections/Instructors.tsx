@@ -7,7 +7,7 @@ const Instructors = () => {
       <div>
         <h2>{INSTRUCTORS.head} </h2>
       </div>
-      <div className="flex flex-wrap justify-around  basis-1/4  w-full">
+      <div className="flex flex-wrap justify-around basis-full md:basis-1/3   w-full">
         {INSTRUCTORS.mentors.map((mentor: any) => (
           <div key={mentor.id}>
             <MentorCard name={mentor.name} url={mentor.url} />

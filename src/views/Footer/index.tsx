@@ -54,7 +54,7 @@ const Footer = () => {
         <div className="bg-gray-800 h-0.5 w-full my-3" />
 
         <div className="flex justify-center items-center">
-          <p className="text-xs md:text-sm">2023 © PANAVERSE DAO - Junaid</p>
+          <p className="text-xs md:text-sm">2023 © PANAVERSE DAO Junaid</p>
         </div>
       </div>
     </div>

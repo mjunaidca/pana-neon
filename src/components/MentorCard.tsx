@@ -30,7 +30,7 @@ interface Props {
 
 const MentorCard = ({ name, url }: Props) => {
   return (
-    <div className=" bg-gray-50 ring-4 ring-red-700/80 shadow-lg rounded-lg overflow-hidden mx-20 sm:mx-16 md:mx-4 w-full md:w-60 my-4">
+    <div className="bg-gray-50 ring-4 ring-red-700/80 shadow-lg rounded-lg overflow-hidden mx-4 sm:mx-8 w-full sm:w-48 md:w-60 my-4">
       <div className="relative h-32 md:h-40 w-full flex items-center justify-center p-4">
         <Image
           alt={name}
@@ -41,7 +41,7 @@ const MentorCard = ({ name, url }: Props) => {
         />
       </div>
       <div className="p-4 flex justify-center">
-        <h3>{name}</h3>
+        <h3 className="text-sm sm:text-base md:text-lg">{name}</h3>
       </div>
     </div>
   );
