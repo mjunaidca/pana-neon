@@ -1,4 +1,6 @@
 import { NavBarItem, Instructors } from "@/types"
+import { BsFacebook, BsTwitter, BsPlayBtnFill, BsInstagram, BsGithub, BsDiscord } from "react-icons/bs";
+import { SocialMedia } from "@/types"
 
 export const NAVBARITEMS: Array<NavBarItem> = [
     {
@@ -188,3 +190,41 @@ export const NUTSHELL = {
     subHead: `Earn While You Learn`,
     description: `In this brand-new type of curriculum, students will learn how to make money and boost exports in the classroom and will begin doing so within six months of the program's beginning. It resembles a cross between a corporate venture and an educational project.    `
 }
+
+
+
+
+export const SOCIALMEDIA: any = [
+    {
+        name: 'Facebook',
+        link: "https://www.facebook.com/piaic/",
+        icon: BsFacebook
+    },
+    {
+        name: 'Twitter',
+        link: "https://twitter.com/piaicofficial",
+        icon: BsTwitter
+    },
+    {
+        name: 'Instagram',
+        link: "https://www.instagram.com/piaicofficial/",
+        icon: BsInstagram
+    },
+    {
+        name: 'YouTube',
+        link: "https://www.youtube.com/@PIAIC",
+        icon: BsPlayBtnFill
+    },
+    {
+        name: 'Discord',
+        link: "https://discord.com/channels/790484092772548613/928284551988518912",
+        icon: BsDiscord
+    },
+    {
+        name: 'GitHub',
+        link: "https://github.com/panaverse",
+        icon: BsGithub
+    },
+
+]
+

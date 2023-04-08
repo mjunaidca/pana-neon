@@ -11,3 +11,9 @@ export type Instructors = {
     }>
 
 }
+
+export type SocialMedia={
+    name: string;
+    link: string;
+    icon?: any
+}
