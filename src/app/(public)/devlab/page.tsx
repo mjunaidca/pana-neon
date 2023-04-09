@@ -1,4 +1,4 @@
-import { BlackButton } from "@/components/Buttons";
+import { BlackButton, RingButton } from "@/components/Buttons";
 import { DEVLAB } from "@/utlis/data";
 import Image from "next/image";
 import DeveloperProfileCard from "@/components/DeveloperProfileCard";
@@ -34,16 +34,25 @@ const DevLab = async () => {
           {" "}
           <h4> {DEVLAB.subHead} </h4>
         </div>
-        <div>
+        <div className="flex flex=col md: flex-row justify-center gap-5">
           {" "}
-          <BlackButton
-            link="./login"
-            key={DEVLAB.head}
-            text={DEVLAB.btnText}
-          />{" "}
+          <div>
+            <BlackButton
+              link="./signup"
+              key={DEVLAB.head}
+              text={DEVLAB.btnText}
+            />{" "}
+          </div>
+          <div>
+            <RingButton
+              link="./login"
+              key={DEVLAB.head}
+              text={DEVLAB.btnText2}
+            />
+          </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-6 bg-gray-50  items-stretch justify-center w-full border-black/50 rounded-sm  border-4 border-t-8 py-8 mt-8">
+      <div className="flex flex-wrap gap-6 bg-gray-50  items-stretch justify-center w-full border-gray-200/95 rounded-sm  border-4 border-t-8 py-8 mt-8">
         {Approve_Dev.map((dev: Developer) => (
           <div
             key={dev.dev_id}

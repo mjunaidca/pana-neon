@@ -7,14 +7,14 @@ export const NAVBARITEMS: Array<NavBarItem> = [
         label: 'Syllabus',
         href: "/syllabus"
     },
-    {
-        label: 'Blog',
-        href: "/blog"
-    },
-    {
-        label: 'Announements',
-        href: "/announcements"
-    },
+    // {
+    //     label: 'Blog',
+    //     href: "/blog"
+    // },
+    // {
+    //     label: 'Announements',
+    //     href: "/announcements"
+    // },
     {
         label: 'Developers',
         href: "/devlab"
@@ -230,5 +230,6 @@ export const SOCIALMEDIA: any = [
 export const DEVLAB = {
     head: "Panaverse Developers Lab",
     subHead: `Browse developer experts who have been recognized by Panaverse DAO for their in depth knowledge and skillset.`,
-    btnText: "Make Your Developer Profile",
+    btnText: "Create Your Developer Profile",
+    btnText2: "Complete Your Profile",
 }

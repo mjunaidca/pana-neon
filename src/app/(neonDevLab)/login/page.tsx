@@ -19,11 +19,12 @@ let initData = {
   skills: "",
   personal_website: "",
   linkedin_url: "",
-  is_approved: false,
+  is_approved: null,
 };
 
 const Login = () => {
   const [data, setData] = useState(initData);
+  const router = useRouter();
 
   function handleEmailChange(e: ChangeEvent<HTMLInputElement>) {
     setData({
@@ -31,7 +32,6 @@ const Login = () => {
       email: e.target.value,
     });
   }
-
 
   function handlePasswordChange(e: ChangeEvent<HTMLInputElement>) {
     setData({
@@ -59,12 +59,18 @@ const Login = () => {
 
     const result = await res.json();
 
+    if (result) {
+      console.log(result[0].dev_id);
+    }
+
+    router.push(`/edit/${result[0].dev_id}`);
+
     console.log("Result From API route", result);
   };
 
   return (
     <div>
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto py-8 min-h-screen justify-center items-center my-16">
         <h1 className="text-2xl font-bold mb-6 text-center">Developer Login</h1>
         <form
           onSubmit={handleSubmit}
@@ -101,10 +107,10 @@ const Login = () => {
           </div>
 
           <button
-            className="w-full bg-indigo-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300"
+            className="w-full bg-gray-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300"
             type="submit"
           >
-            Register
+            Login
           </button>
         </form>
       </div>

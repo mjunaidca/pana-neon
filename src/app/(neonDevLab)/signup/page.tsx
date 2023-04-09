@@ -81,7 +81,7 @@ const SignUp = () => {
     });
 
     if (!signupRequest.ok) {
-      throw new Error("APIR ROUTE ERROR");
+      throw new Error("EMAIL Already Exists ");
     }
 
     const result = await signupRequest.json();
@@ -89,7 +89,7 @@ const SignUp = () => {
     if (result) {
       console.log("Success, refirectinh yo the login page");
 
-      router.push("/login");
+      router.push(`./edit/${result[0].dev_id}`);
     }
 
     console.log("SIGNUP Result From API route", result);
@@ -97,7 +97,7 @@ const SignUp = () => {
 
   return (
     <div>
-      <div className="container mx-auto py-8">
+      <div className="container mx-auto py-8 min-h-screen my-16 ">
         <h1 className="text-2xl font-bold mb-6 text-center">Sign UP</h1>
         <form
           onSubmit={handleSubmit}
@@ -194,10 +194,10 @@ const SignUp = () => {
           </div>
 
           <button
-            className="w-full bg-indigo-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300"
+            className="w-full bg-gray-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-gray-600 transition duration-300"
             type="submit"
           >
-            Register
+            Register Now
           </button>
         </form>
       </div>
