@@ -1,4 +1,19 @@
-import { Developer } from "@/types";
+"use client";
+import { useEffect, useState } from "react";
+let initData: Partial<Developer> = {};
+
+interface Developer {
+  date_of_birth: string;
+  profile_title: string;
+  about_me: string;
+  image_url: string;
+  github_link: string;
+  best_project_title: string;
+  best_project_description: string;
+  skills: string;
+  personal_website: string;
+  linkedin_url: string;
+}
 
 const allDevs = async () => {
   const res = await fetch("http://localhost:3000/api/getdev", {
