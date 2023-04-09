@@ -230,6 +230,6 @@ export const SOCIALMEDIA: any = [
 export const DEVLAB = {
     head: "Panaverse Developers Lab",
     subHead: `Browse developer experts who have been recognized by Panaverse DAO for their in depth knowledge and skillset.`,
-    btnText: "Create Your Developer Profile",
-    btnText2: "Complete Your Profile",
+    btnText: "Create Your Profile",
+    btnText2: "Update Profile",
 }
